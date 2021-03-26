@@ -1,0 +1,12 @@
+.contents {
+    width: 350px;
+    margin-left: 20px;
+}
+
+.song {
+    border: 2px solid rgba(0,0,0,0.3);
+    border-radius: 8px;
+    padding: 3px 28px 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
