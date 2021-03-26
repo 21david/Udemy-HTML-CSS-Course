@@ -1,0 +1,63 @@
+html {
+    background-color: lightgray;
+}
+
+
+.A {
+    background-color: black;
+    padding: 10px;
+
+    max-width: 300px;
+}
+
+.inner-1 {
+    padding: 10px;
+    max-width: 200px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.A-1 {
+    background-color: lightblue;
+}
+
+.A-2 {
+    background-color: yellow;
+}
+
+.A-3 {
+    background-color: yellowgreen;
+}
+
+
+.B {
+
+    background-color: brown;
+    max-width: 300px;
+    padding: 10px;  
+    margin: 10px 0;
+}
+
+.B-1 {
+    background-color: green;
+    text-align: left;
+}
+
+.B-2 {
+    background-color: cyan;
+}
+
+.B-3 {
+    background-color: pink;
+    text-align: right;
+}
+
+
+footer {
+   text-align: center;
+}
+
+.outer {
+    margin: 10px auto;
+}

@@ -1,0 +1,39 @@
+.site-header nav {
+
+    ul {
+        padding: 0;
+        margin: 0;
+        @extend .group;
+    }
+
+    li {
+        list-style: none;
+        float: left;
+        margin-right: 15px;
+        box-shadow: 2px 2px 2px lighten($main-color-2, 30%);
+
+        /* (SASS) Syntax for using a mixin.
+           These properties apply only when 'bp-babyBear' conditions
+           are met, which is when the viewport is less than 600 pixels wide */
+        @include bp-babyBear {
+            float: none;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+    }
+
+    
+    a {
+        display: block;
+        text-decoration: none;
+        background-color: $main-color-1;
+        color: white;
+        padding: 10px 20px;
+    }
+    
+    a:hover {
+        @extend a;
+        color: white;
+        background-color: darken($main-color-1, 10%);
+    }
+}

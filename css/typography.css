@@ -1,0 +1,109 @@
+html {
+    font-family: Georgia, "Times New Roman", sans-serif;
+    font-size: 100%;
+
+    /* 
+    Different options for font-size:
+
+    font-size: 85%;
+    font-size: 140%;
+    font-size: 17px;
+    font-size: small;
+    font-size: medium;
+    */
+
+    font-weight: normal;
+
+    /* Specify space between each letter: */
+    letter-spacing: 4px;
+
+    /* Specify space between each word: */
+    word-spacing: 10px;
+
+    /* Add shadow to text using four values:
+        (horizontal offset) (vertical offset) (blur radius) (color of shadow)
+
+    text-shadow: 2px 10px 4px #999999;
+    text-shadow: 2px 10px 4px rgba(0,0,0,0.5);
+    */
+
+    text-shadow: 2px 10px 4px rgba(0,0,0,0.5);
+
+    /* Convert any text to uppercase or lowercase 
+    text-transform: uppercase;
+    text-transform: lowercase;
+    */
+    text-transform: lowercase;
+
+    /* With this property, you can add underline to a word,
+    or you could remove underlines from links by making
+    a CSS rule that targets <a> elements.
+    
+    text-decoration: underline;
+    text-decoration: none;
+    */
+
+    text-decoration: none;
+
+
+    /* Text alignment:
+    text-align: right;
+    text-align: center;
+
+    "justify" forces each line to be the same width, like a newspaper column.
+    text-align: justify;  
+    
+    text-align: left;
+    */
+}
+
+html {
+    background-color: rgb(255, 253, 108);
+}
+
+.main-div {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.heading {
+    border-radius: 10px;
+    font-style: italic;
+    background-color: #DDD;
+
+    margin-top: 20px;
+    padding: 20px;
+    padding-bottom: 60px;
+
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.paragraph {
+    border-radius: 10px;
+    font-family: arial;
+    font-style: none;
+    text-shadow: 3px 2px 4px rgba(0,0,0,0.5);
+
+    /* Adjust the spacing between each line */
+    line-height: 1.4;
+
+    max-width: 100%;
+    padding: 30px 60px;
+    background-color: rgb(169, 211, 233);
+    text-align: justify;
+}
+
+footer {
+    padding-top: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+}

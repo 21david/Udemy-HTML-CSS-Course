@@ -1,0 +1,141 @@
+:root {
+    --website-background: #a0f1fa;
+    --light-color-1: #e6fcff;
+    --light-color-2: #ccf9ff;
+}
+
+
+body {
+    font-family: Helvetica;
+    font-size: 130%;
+
+    max-width: 700px;
+    margin: 0 auto;
+
+    background-color: var(--website-background);
+}
+
+.menu {
+    background-color: var(--light-color-1);
+    text-align: center;
+}
+
+.toggle-btn {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    
+    header .toggle-btn-visible {
+        display: block;
+        padding: 5px 10px;
+        border: 2px solid black;
+    
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+
+    header .toggle-target-hidden {
+        display: none;
+    }
+
+    header .toggle-target-expanded {
+        display: block;
+    }
+
+}
+
+.contents .toggle-btn-visible {
+    display: block;
+}
+
+
+.contents .toggle-target-hidden {
+    display: none;
+}
+
+.contents .toggle-target-expanded {
+    display: block;
+}
+
+
+/* Navigation */
+nav {
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+nav ul {
+    list-style: none;
+
+    padding: 0;
+}
+
+nav li {
+    background-color: var(--light-color-1);
+
+    font-weight: bold;
+
+    float: left;
+
+    padding: 10px 20px;
+
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-right: 15px;
+
+}
+
+nav li:hover {
+    background-color: var(--light-color-2);
+}
+
+nav a {
+    text-decoration: none;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* End Navigation */
+
+
+p {
+    background-color: var(--light-color-1);
+    text-align: center;
+    padding: 5px 10px;
+    border: 2px solid black;
+
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+}
+
+
+
+
+
+.cheatcode {
+    text-decoration: none;
+}
+
+
+/* This is the "clearfix" method
+	Without this, the layout gets messed up.
+	Floats must always be cleared. */
+    .group:before,
+    .group:after {
+      content: "";
+      display: table;
+    }
+    
+    .group:after {
+      clear: both;
+    }
+    
+    .group {
+      zoom: 1;
+    }
+    /* End Clearfix method */

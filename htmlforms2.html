@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>More form stuff</title>
+    </head>
+    <body>
+        
+        <!-- DROPDOWN MENU -->
+        <fieldset>
+            <legend for="favoriteColor">What is your favorite color?</legend>
+            <select id="favoriteColor" name="favoriteColor">
+                <!-- the value is what gets sent back to a server to notify which option was chosen, 
+                    not the actual text itself. -->
+                <option value="colorRed">Red</option>
+                <option value="colorOrange">Orange</option>
+                <option value="colorYellow">Yellow</option>
+            </select>
+        </fieldset>
+
+        <p> </p>
+
+        <!-- RADIO BUTTONS -->
+        <!-- For the radio buttons to be associated with each other, they need to have
+            the same name. -->
+        <!-- A field set groups several fields that are related to each other. -->
+        <!-- Again, the value attribute is what gets passed to the server. -->
+        <fieldset>
+            <legend>What is your favorite meal?</legend>
+            <input id="breakfast" type="radio" name="favMeal" value="meal1"><label for="breakfast">Breakfast</label>
+            <input id="brunch" type="radio" name="favMeal" value="meal2"><label for="brunch">Brunch</label>
+            <input id="lunch" type="radio" name="favMeal" value="meal3"><label for="lunch">Lunch</label>
+        </fieldset>
+
+        <p> </p>
+
+        <!-- CHECKBOXES -->
+        <fieldset>
+            <legend>What pets do you have?</legend>
+            <input id="cat" type="checkbox" name="pets" value="anim1"><label for="cat">Cat</label>
+            <input id="dog" type="checkbox" name="pets" value="anim2"><label for="dog">Dog</label>
+            <input id="bird" type="checkbox" name="pets" value="anim3"><label for="bird">Bird</label>
+            <input id="fish" type="checkbox" name="pets" value="anim4"><label for="fish">Fish</label>
+        </fieldset>
+
+    
+        <p> </p>
+        <a href="beginnerwebsite.html">Go back.</a>
+    </body>
+</html>

@@ -1,0 +1,146 @@
+/* This is a rule */
+html {
+    /* This is a property */
+    background-color: #029c78;
+}
+
+body {
+    font-family: tahoma, sans-serif;
+    font-size: 87%;
+}
+
+header {
+    padding-top: 20px;
+    color: #617140;
+}
+
+header h1 {
+    margin: 0px;
+    font-weight: normal;
+    font-size: 165%;
+}
+
+header p {
+    margin: 0px;
+}
+
+
+/* Site Navigation */
+.site-nav {
+    margin-top: 20px;
+}
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav li {
+    list-style: none;
+    float: left;
+}
+
+.site-nav a {
+    /* Default type of a is inline, but we can change it to block-level element.
+    This way, if height is increased, all the other blocks are affected. */
+    display: block;
+    color:  #617140;
+    text-decoration: none;
+
+    padding: 10px 20px;
+    margin-right:  5px;
+    border: 2px solid  #00edb6; 
+    border-bottom: none;
+
+}
+
+/* This is known as a "pseudo-selector" 
+When the mouse hovers over an <a> element in the
+"site-nav" class, these properties will affect them. */
+.site-nav a:hover {
+    background-color:  #00edb6;
+}
+
+/* End Site Navigation */
+
+.container {
+    max-width: 940px; /* If the width goes beyond this, it will force the words to wrap */
+    background-color: #FFF;
+    padding-right: 40px;
+    padding-left: 40px;
+
+    /* Center the contents by doing this: */
+    margin-left: auto;
+    margin-right: auto;
+
+    box-sizing: border-box;
+}
+
+.content-area {
+    border-top: 2px solid #00edb6;
+    border-bottom: 2px solid #00edb6;
+}
+
+.main-content {
+    width: 63%; /* 63% of the original size */
+    margin-right: 2%;
+    float: left; 
+}
+
+.sidebar {
+    width: 35%;
+    float: left;
+    background-color: #00edb6;
+
+    /*
+    This can be replaced with "shorthand" code
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    padding-left: 40px;
+    padding-right: 40px;
+    */
+
+    /* Starts with the top, then goes clockwise 
+    padding: 20px 40px 20px 40px;
+
+    This can be shortened again by only giving 
+    1 value for vertical, and 1 value for horizontal.
+    */
+
+    padding: 20px 40px;
+
+    box-sizing: border-box;
+
+    font-size: 85%;
+}
+
+
+/* This is the "clearfix" method
+Without this, the layout gets messed up.
+Floats must always be cleared. */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+
+footer {
+    text-align: center;
+    font-size: 85%;
+    color: #999;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+

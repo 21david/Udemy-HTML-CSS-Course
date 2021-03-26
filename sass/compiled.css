@@ -1,0 +1,123 @@
+/* (SASS) Import another file and place it right here */
+/* (SASS) A mixin is like a function that takes variables 
+   This one takes in parameter values and uses them. */
+/* (SASS) This mixin does not take in any parameter values */
+/* Sass variables (can't be seen in .css) */
+html {
+  /* (SASS) Use this mixin to set the appearance for small screens */
+  /* (SASS) Use this mixin to set the appearance for big screens */
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 85%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  html {
+    font-size: 120%;
+  }
+}
+
+body {
+  font-family: helvetica, sans-serif;
+}
+
+body {
+  padding: 10px;
+  background-color: white;
+}
+body p {
+  color: black;
+  margin: 10px;
+}
+body a, body .site-header nav a:hover, .site-header nav body a:hover {
+  color: darkblue;
+}
+
+/* (SASS) Import another file and place it right here */
+.site-header nav ul {
+  padding: 0;
+  margin: 0;
+}
+.site-header nav li {
+  list-style: none;
+  float: left;
+  margin-right: 15px;
+  box-shadow: 2px 2px 2px #4d4d4d;
+  /* (SASS) Syntax for using a mixin.
+     These properties apply only when 'bp-babyBear' conditions
+     are met, which is when the viewport is less than 600 pixels wide */
+}
+@media only screen and (max-width: 600px) {
+  .site-header nav li {
+    float: none;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+}
+.site-header nav a, .site-header nav a:hover {
+  display: block;
+  text-decoration: none;
+  background-color: darkblue;
+  color: white;
+  padding: 10px 20px;
+}
+.site-header nav a:hover {
+  color: white;
+  background-color: #000058;
+}
+
+.btn-a, .btn-c, .btn-b {
+  display: inline-block;
+  padding: 15px;
+  margin-right: 10px;
+  border: 1px solid darkblue;
+  border-radius: 7px;
+  font-size: 80%;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-b {
+  /* (SASS) Inherit the properties of .btn-a above */
+  /* (SASS) Use lighten() function to lighten a color by a percentage */
+  background-color: #666666;
+}
+
+.btn-c {
+  /* (SASS) Inherit the properties of .btn-a above */
+  /* (SASS) Use the mixin by sending it parameter values */
+  background-image: linear-gradient(to bottom, white, #000066);
+}
+
+/* This is the "clearfix" method
+    Without this, the layout gets messed up.
+    Floats must always be cleared. */
+.group:before, .site-header nav ul:before,
+.group:after,
+.site-header nav ul:after {
+  content: "";
+  display: table;
+}
+
+.group:after, .site-header nav ul:after {
+  clear: both;
+}
+
+.group, .site-header nav ul {
+  zoom: 1;
+}
+
+/* End Clearfix method */
+/*
+Compile in the terminal using:
+
+    npx sass --watch main.scss output.css
+
+or if you have the package.json file:
+
+    npm run sass
+*/
+
+/*# sourceMappingURL=compiled.css.map */

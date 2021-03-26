@@ -1,0 +1,102 @@
+/* (SASS) Import another file and place it right here */
+@import 'mixins';
+
+/* Sass variables (can't be seen in .css) */
+$main-color-1: darkblue;
+$main-color-2: black;
+$main-color-3: white;
+
+html {
+
+    /* (SASS) Use this mixin to set the appearance for small screens */
+    @include bp-babyBear {
+        font-size: 85%;
+    }
+
+    /* (SASS) Use this mixin to set the appearance for big screens */
+    @include bp-papaBear {
+        font-size: 120%;
+    }
+}
+
+body {
+    font-family: helvetica, sans-serif;
+}
+
+
+body {
+    padding: 10px;
+    background-color: $main-color-3;
+
+    p {
+        color: $main-color-2;
+        margin: 10px;
+    }
+
+    a {
+        color: $main-color-1;
+    }
+}
+
+/* (SASS) Import another file and place it right here */
+@import 'header';
+
+.btn-a {
+    display: inline-block;
+    padding: 15px;
+    margin-right: 10px;
+    border: 1px solid $main-color-1;
+    border-radius: 7px;
+    font-size: 80%;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;  
+}
+
+
+
+.btn-b {
+    /* (SASS) Inherit the properties of .btn-a above */
+    @extend .btn-a;
+
+    /* (SASS) Use lighten() function to lighten a color by a percentage */
+    background-color: lighten($main-color-2, 40%);
+}
+
+.btn-c {
+    /* (SASS) Inherit the properties of .btn-a above */
+    @extend .btn-a;
+
+    /* (SASS) Use the mixin by sending it parameter values */
+    @include verticalGradient(white, darken(blue, 30%));
+}
+
+
+
+/* This is the "clearfix" method
+    Without this, the layout gets messed up.
+    Floats must always be cleared. */
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+}
+/* End Clearfix method */
+
+/*
+Compile in the terminal using:
+
+    npx sass --watch main.scss output.css
+
+or if you have the package.json file:
+
+    npm run sass
+*/

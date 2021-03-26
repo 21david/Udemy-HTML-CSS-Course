@@ -1,0 +1,19 @@
+/* (SASS) A mixin is like a function that takes variables 
+   This one takes in parameter values and uses them. */
+@mixin verticalGradient($fromColor, $toColor) {
+    background-image: linear-gradient(to bottom, $fromColor, $toColor);
+}
+
+
+/* (SASS) This mixin does not take in any parameter values */
+@mixin bp-babyBear {
+    @media only screen and (max-width: 600px) {  
+        @content;
+    }
+}
+
+@mixin bp-papaBear {
+    @media only screen and (min-width: 1000px) {  
+        @content;
+    }
+}

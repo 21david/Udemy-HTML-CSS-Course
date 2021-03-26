@@ -1,0 +1,10 @@
+html {
+    background-color: darkblue;
+}
+
+body {
+    background-color: cyan;
+    height: 500px;
+
+    /* margin: 0; */
+}

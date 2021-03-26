@@ -1,0 +1,36 @@
+.box-1 {
+    background-color: cyan;
+    width: 500px;
+    height: auto;
+}
+
+
+.image-banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.image-banner img {
+    width: 100%;
+    display: block;
+    z-index: 10;
+}
+
+.image-desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    font-family: arial;
+    font-size: 105%;
+
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    padding: 0px 15px;
+
+    text-align: justify;
+
+    z-index: 1;
+}

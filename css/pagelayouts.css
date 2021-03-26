@@ -1,0 +1,50 @@
+.container {
+    max-width: 940px; /* If the width goes beyond this, it will force the words to wrap */
+    
+    /* Center the contents by doing this: */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color:rgba(0, 128, 0, 0.233);
+}
+
+.content-area {
+    background-color: beige;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.main-content {
+    width: 63%; /* 63% of the original size */
+    margin-right: 2%;
+    float: left; 
+}
+
+.sidebar {
+    width: 34%;
+    float: left;
+}
+
+
+/* This is the "clearfix" method
+Without this, the layout gets messed up.
+Floats must always be cleared. */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+
+footer {
+    background-color: rgba(0, 128, 0, 0.233);
+}

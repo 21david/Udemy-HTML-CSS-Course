@@ -1,0 +1,51 @@
+.container {
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th {
+    text-align: left; 
+    background-color: #005a73;
+    color: #FFF;
+
+    /* Add a shadow to the text so it "pops" */
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.col-title {
+    width: 40%;
+}
+
+.col-artist {
+    width: 30%;
+}
+
+.col-release-year,
+.col-length {
+    width: 15%; 
+}
+
+table th,
+table td {
+    border: 1px solid #005a73;
+    padding: 10px;
+
+    /* Instead of centering text vertically (default), we want text to start at the top. */
+    vertical-align: top; 
+}
+
+table tbody tr:nth-child(odd) td {
+    background-color: #d1e3e8;
+}
+
+/* Select only third and fourth columns of every row: */
+table.song-list tr :nth-child(3),
+table.song-list tr :nth-child(4) {
+    text-align: center;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- https://www.getbootstrap.com -->
+        <meta charset="utf-8"/>
+        <title>Bootstrap</title><!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+
+        <!-- "py-4" means padding in the Y orientation, 5 is the biggest size
+             "mb-1" means margin at the bottom, 5 is the biggest size -->
+        <div class="bg-dark py-5 shadow mb-1 text-light">
+            <div class="container">
+                <h1 class="display-2">Our Amazing Website</h1>
+                <p class="lead">Thanks for visiting this website that uses Bootstrap.</p>
+            </div>
+        </div>
+
+        <div class="container py-5">
+
+            <div class="row">
+                <div class="col-md-8">
+                    <h1>Welcome to our page!</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia laudantium, sint quia explicabo praesentium quas temporibus eveniet et corporis veritatis quam id nesciunt tenetur qui magnam impedit! Ex, numquam nihil.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, magnam voluptatibus explicabo non labore cum fugiat voluptas qui fugit harum tenetur rerum maxime numquam quod voluptatem reprehenderit, maiores ipsa libero?</p>
+                    <a href="#bonus-content" data-toggle="collapse" class="btn btn-primary btn-lg">Learn More</a>
+
+                    <div class="collapse my-3" id="bonus-content">
+                        <h3>Hidden Content</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sint repudiandae quod iusto magni dolores voluptatum optio doloribus quis iste voluptate ullam voluptatem adipisci neque, facilis ratione aperiam quidem dolorum!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis necessitatibus magni aliquam voluptate non quas repellat possimus. Eaque non placeat saepe corporis deserunt minima enim error dolorum totam, commodi eligendi!</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 small">
+                    <div class="alert alert-warning">We recently updated our entire site. Check it out!</div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, magnam voluptatibus explicabo non labore cum fugiat voluptas qui fugit harum tenetur rerum maxime numquam quod voluptatem reprehenderit, maiores ipsa libero?</p>
+                    <button class="btn btn-outline-success" data-toggle="modal" data-target="#contact-us">Contact Us</button>
+
+                    <div class="modal fade" id="contact-us" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                This uses a Bootstrap component called a "modal" that you can see at <a href="https://getbootstrap.com/docs/5.0/components/modal/">this page.</a>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="bg-dark py-4">
+            <div class="container" style="text-align: center;" >
+                <p class="small text-muted text-center">&copy; 2020 Our Site</p>
+                <a href="beginnerwebsite.html" style="text-decoration: none" class="small text-muted">Go back</a>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    </body>
+</html>

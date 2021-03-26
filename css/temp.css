@@ -1,0 +1,154 @@
+
+html {
+    margin: 0;
+    padding: 0;
+
+    height: 0%;
+
+    font-family: Helvetica;
+    font-size: 90%;
+}
+
+body {
+    position: relative;
+    top: -22px;
+    background-color: black;
+    padding: 0;
+}
+
+.sections p {
+    font-size: 130%;
+}
+
+fieldset {
+    
+    text-align: left;
+
+    margin-left: 90px;
+    margin-right: auto;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    background-color: black;
+    border: 2px solid #382418;
+
+    flex-basis: 30%;
+}
+
+.fieldsets {
+    max-width: 800px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+fieldset legend,
+fieldset li {
+    font-size: 85%;
+    font-family: arial;
+}
+
+fieldset legend {
+    text-align: center;
+}
+
+fieldset li {
+    color: #90C040;
+    line-height: 1.35;
+}
+
+fieldset ul {
+    margin: 0;
+    padding-left: 15px;
+
+}
+
+.main-area {
+    background-image: url('../images/runescape/oldschool-runescape-background.jpg');
+    background-repeat: repeat-y;
+
+    max-width: 910px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+    color: white;
+}
+
+.top-of-paper {
+    max-width: 765px;
+    background-image: url('../images/runescape/medieval-paper-top.gif');
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link-area {
+
+    color: black;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    position: relative;
+    background-image: url('../images/runescape/medieval-paper.gif');
+    background-repeat: repeat-y;
+    background-position: top center;
+}
+
+.link-area:before {
+    background-image: url('../images/runescape/medieval-paper-top.gif');
+    background-repeat: no-repeat;
+    background-position: center top; /* center horizontally, and place it at the top */
+    content: '';
+
+    height: 50px; 
+    width: 100%;
+
+    left: 0;
+
+    position: absolute;
+    top: -11px;
+}
+
+.link-area:after {
+    background-image: url('https://www.runescape.com/img/rsp777/scroll/backdrop_765_bottom.gif');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    content: '';
+
+    height: 50px;
+    width: 100%;
+
+    left: 0;
+
+    position: absolute;
+    bottom: -11px;
+    top: auto;
+}
+
+
+.sections {
+    padding: 30px 20px;
+}
+
+.welcome {
+    font-family: "Times New Roman";
+    color: #6D4211;
+    font-size: 270%;
+    text-shadow: 1px 1px 0px black;
+}
+
+
+footer {
+    text-align: center;
+    line-height: 0.3;
+
+    height: 60px;
+
+    margin-top: 30px;
+}

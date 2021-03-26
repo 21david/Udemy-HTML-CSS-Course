@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Background image</title>
+        <link rel="stylesheet" href="css/backgroundimage.css">
+    </head>
+    <body>
+        <div class="main-area">
+            <p>ㅤ</p>
+            <header class="header">
+                <img src="images/runescape/oldschool-runescape-logo.png" title="The good old days">
+                <p>There are currently <span id="amt-of-ppl">216,355</span> people playing!</p>
+            </header>
+
+            <div class="fieldsets">
+                <fieldset>
+                    <legend>Game</legend>
+                    <ul>
+                        <li>About Me</li>
+                        <li>My Goals</li>
+                        <li>Videos</li>
+                        <li>RuneScape Stats</li>
+                        <li>Contact Me</li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Community</legend>
+                    <ul>
+                        <li>About Me</li>
+                        <li>Contact Me</li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account</legend>
+                    <ul>
+                        <li>About Me</li>
+                        <li>Contact Me</li>
+                    </ul>
+                </fieldset>
+            </div>
+
+            <div class="link-area">
+
+                <div class="sections">
+
+                    <h1 class="welcome">Welcome to my website!</h1>
+
+                    <section>
+                        <h1>This is a link 1</h1>
+                        <p>This is a link to something 1</p>
+                    </section>
+
+                    <section>
+                        <h1>This is a link</h1>
+                        <p>This is a link to something</p>
+                    </section>
+
+                    <section>
+                        <h1>This is a link</h1>
+                        <p>This is a link to something</p>
+                    </section>
+                    
+                    <section>
+                        <h1>This is a link</h1>
+                        <p>This is a link to something</p>
+                    </section>
+
+                    <section>
+                        <h1>This is a link</h1>
+                        <p>This is a link to something</p>
+                    </section>
+
+                    <section>
+                        <h1>This is a link</h1>
+                        <p>This is a link to something</p>
+                    </section>
+                    
+                    <section>
+                        <h1>This is a link</h1>
+                        <p>This is a link to something</p>
+                    </section>
+
+                    <section>
+                        <h1>This is a link</h1>
+                        <p>This is a link to something</p>
+                    </section>
+
+                    <section>
+                        <h1>This is a link 9</h1>
+                        <p>This is a link to something 9</p>
+                    </section>
+                </div>
+
+            </div>
+
+            <footer>
+                <p>This is the footer part of the website.</p>
+                <a href="beginnerwebsite.html">Go back.</a>
+            </footer>
+        </div>
+        
+        
+        <script>
+            /* JavaScript for displaying the number of players currently playing
+                as a random number */
+
+            // Between 249,000 and 252,000 people playing
+            var min = 249000;
+            var range = 3000;
+            var randomNum = Math.floor(Math.random() * range + min);
+            var formatted = numberWithCommas(randomNum);
+            document.getElementById("amt-of-ppl").innerHTML = formatted;
+
+            // To add commas to the number, from Stack Overflow:
+            function numberWithCommas(x) {
+                return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            }
+        </script>
+
+    </body>
+</html>

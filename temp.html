@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Background image</title>
+        <link rel="stylesheet" href="css/temp.css">
+    </head>
+    <body>
+        <div class="main-area">
+            <p>ㅤ</p>
+            <header class="header">
+                <img src="images/runescape/oldschool-runescape-logo.png" title="The good old days">
+                <p>There are currently <span id="amt-of-ppl">216,355</span> people playing!</p>
+            </header>
+
+            <div class="fieldsets">
+                <fieldset>
+                    <legend>Links</legend>
+                    <ul>
+                        <li>Home</li>
+                        <li>Sandbox Pages</li>
+                        <li>RuneScape Stats</li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Information</legend>
+                    <ul>
+                        <li>About Me</li>
+                        <li>Who I am</li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contact</legend>
+                    <ul>
+                        <li>Email</li>
+                        <li>LinkedIn</li>
+                        <li>Message</li>
+                    </ul>
+                </fieldset>
+            </div>
+
+            <div class="link-area">
+
+                <div class="sections">
+
+                    <h1 class="welcome">Welcome to my website!</h1>
+
+                    <p><a href="flexbox.html">Flexboxes!!!</a></p>
+                    <p>Responsive web design with a responsive grid: <a href="responsivegrid.html">click here</a>.</p>
+                    <p>Responsive web design: <a href="responsive.html">click here</a>.</p>
+                    <p>Full width background with fixed width contents: <a href="fullwidthbackground.html">click here</a>.</p>
+                    <p>CSS Sprites: <a href="csssprites.html">click here</a>.</p>
+                    <p>Adding a gradient background image: <a href="gradientbackground.html">click here</a>.</p>
+                    <p>Adding a background image: <a href="backgroundimage.html">click here</a>.</p>
+                    <p>Experimenting with custom fonts: <a href="customfonts.html">click here</a>.</p>
+                    <p>Typography: <a href="typography.html">click here</a>.</p>
+                    <p>Styling HTML forms: <a href="styledforms.html">click here</a>.</p>
+                    <p>Styled table: <a href="styledtable.html">click here</a>.</p>
+                    <p>Adding an image, overlapping content, and transparent backgrounds: <a href="overlappingcontent.html">click here</a>.</p>
+                    <p>Adding a navigation bar to the previous page: <a href="pagelayouts3.html">click here</a>.</p>
+                    <p>Using CSS to make the previous webpage look much nicer: <a href="pagelayouts2.html">click here</a>.</p>
+                    <p>Putting things side by side: <a href="pagelayouts.html">click here</a>.</p>
+                    <p>Understanding the box model: <a href="boxmodel.html"> click here</a>.</p>
+                    <p>My first experience with CSS: <a href="csspage.html">click here</a>.</p>
+                    <p>Tables: <a href="tables.html">click here</a>.</p>
+                    <p>Drop down menu, radio buttons, and checkbox buttons: <a href="htmlforms2.html">click here</a>.</p>
+                    <p>Send data using forms: <a href="htmlforms.html">click here</a>.</p>
+                    <p>Section elements: <a href="sections.html">click here</a>.</p>
+                    <p>Structural elements and non-semantic elements: <a href="structuralelems.html">click here</a>.</p>
+                    <ul>
+                        <li>Including:</li>
+                        <ul>
+                            <li>&lt;header&gt;</li>
+                            <li>&lt;footer&gt;</li>
+                            <li>&lt;article&gt;</li>
+                            <li>&lt;aside&gt;</li>
+                            <li>&lt;div&gt;</li>
+                            <li>&lt;span&gt;</li>
+                        </ul>
+                    </ul>
+                    <p>HTML special characters: <a href="specialchars.html">click here</a>.</p>
+                    <p>See my videos and favorite videos <a href="videos.html">here</a>.</p>
+                    <p>Some of my favorite songs: <a href="favsongs.html">listen here</a>.</p>
+                    <p>See some random images I found and liked <a href="favimages.html">here<a>.</p>
+                    <p>Let me show you my <a href="favcolors.html">favorite colors</a>.</p>
+                    <p>This is a <strong>paragraph</strong> that contains only <em>one</em> sentence.</p>
+                    
+                </div>
+
+            </div>
+
+            <footer>
+                <p>This is the footer part of the website.</p>
+            </footer>
+        </div>
+        
+        
+        <script>
+            /* JavaScript for displaying the number of players currently playing
+                as a random number */
+
+            // Between 249,000 and 252,000 people playing
+            var min = 249000;
+            var range = 3000;
+            var randomNum = Math.floor(Math.random() * range + min);
+            var formatted = numberWithCommas(randomNum);
+            document.getElementById("amt-of-ppl").innerHTML = formatted;
+
+            // To add commas to the number, from Stack Overflow:
+            function numberWithCommas(x) {
+                return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            }
+        </script>
+
+    </body>
+</html>
